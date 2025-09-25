@@ -1,0 +1,45 @@
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>IoT Sensor Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>IoT Sensor Dashboard</h1>
+  </header>
+
+  <main>
+    <section class="sensors">
+      <div class="card">
+        <h2>Humidity</h2>
+        <p id="humidity" class="value">55%</p>
+        <small id="humidity-range" class="meta">Normal</small>
+      </div>
+
+      <div class="card">
+        <h2>Temperature</h2>
+        <p id="temperature" class="value">22°C</p>
+        <small id="temperature-range" class="meta">Comfortable</small>
+      </div>
+    </section>
+
+    <section class="led-control card">
+      <h2>LED Control</h2>
+      <button id="ledButton" class="btn">Turn LED On</button>
+      <div id="ledStatus" class="led-status off">OFF</div>
+    </section>
+  </main>
+
+  <footer>
+    <small>Created: IoT dashboard demo</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
